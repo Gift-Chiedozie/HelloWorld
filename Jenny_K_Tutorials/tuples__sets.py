@@ -27,13 +27,19 @@ print(set1.difference(set2|set3)) #difference operator = "-"
 set1.difference_update(set2)
 print(set1)
 print(set2)
-print(set1.symmetric_difference(set2)) #prints items in either sets but not in both
-#operator for symetric_difference = "^"
-#symetric_difference takes only one argument,  and it has room for updating its difference
-#Other operators: isdisjoint(no element in set1 must be set2). it has not operator
-#issubset(every element of set1 is a member if set2 also). its operator is "<="
-#The reverse of issubsetv is issuperset. its operator is ">="
+print(set1.symmetric_difference(set2))
+'''prints items in either sets but not in both
+operator for symetric_difference = "^"
+symetric_difference takes only one argument,  and it has room for updating its difference
+Other operators: isdisjoint(no element in set1 must be set2). it has not operator
+issubset(every element of set1 is a member if set2 also). its operator is "<="
+The reverse of issubsetv is issuperset. its operator is ">="'''
 
-Other iterable arguments can be used in these methods too
+#Other iterable arguments can be used in these methods too
 set1.clear() #clears every element in set1
 del set2 # deletes every element including the set as well
+
+#unpacking a tuple
+coordinates = (1, 2, 3)
+x, y, z = coordinates
+print(x * y * z)
