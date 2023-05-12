@@ -14,5 +14,5 @@ digits = {
 Phone_No = input("Input Phone number: ")
 lettered = []
 for item in Phone_No:
-    lettered += [digits[item]]
+    lettered += [digits.get(item, "!")]
 print(lettered)
